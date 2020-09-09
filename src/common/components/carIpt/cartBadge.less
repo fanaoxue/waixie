@@ -1,0 +1,214 @@
+.cart-num-ipt-cxt {
+  * {
+    /* margin: 0;
+      padding: 0; */
+    list-style: none;
+    /* border: 0;
+      box-sizing: border-box; */
+  }
+
+  .cart-ipt-bg {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    z-index: 99;
+    background-color: #000;
+    opacity: 0.7;
+  }
+
+  // .clearfix:after {
+  //   content: ".";
+  //   display: block;
+  //   font-size: 0;
+  //   height: 0;
+  //   clear: both;
+  //   visibility: hidden;
+  // }
+
+  .clearfix {
+    display: inline-table;
+  }
+
+  .typer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    border: none;
+    z-index: 100;
+    background-color: #fff;
+  }
+
+  .typer h2 {
+    text-align: center;
+    margin: 1rem;
+  }
+
+  .ul_input {
+    text-align: center;
+    padding: 0.25rem 0.125rem;
+    font-size: 1.125rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .ul_input::after {
+    content: '';
+    flex: auto;
+  }
+  .ul_input li {
+    float: left;
+    width: 16.6%;
+    padding: 0.35rem 0.125rem;
+    box-sizing: border-box;
+  }
+
+  .typer li span {
+    display: block;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    line-height: 2rem;
+    padding-top: 0.125rem;
+  }
+  .typer li span:active {
+    background-color: #828282;
+    color: #fff;
+  }
+  .typer li.typer-pro.is-closeType {
+    float: right;
+    width: 22.22%;
+  }
+
+  .cart-hide-ipt {
+    display: none;
+  }
+
+  .ul_keybord {
+    text-align: center;
+    padding: 0.35rem 0.125rem;
+    font-size: 1.125rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  // .ul_keybord::after{
+  //   content: '';
+  //   flex: auto;
+  //   order:98;
+  //   width: 10px;
+  // }
+  .ul_keybord li {
+    float: left;
+    width: 16.6%;
+    padding: 0.35rem 0.125rem;
+    box-sizing: border-box;
+  }
+
+  .ul_keybord li span {
+    display: block;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    line-height: 2rem;
+    padding-top: 0.125rem;
+  }
+
+  .typer li.typer-num.is-A {
+    margin-left: 1rem;
+  }
+
+  .typer li.typer-num.is-OK {
+    color: #1581cf;
+  }
+  .typer li.typer-num.is-OK span {
+    display: block;
+    border-radius: none;
+    box-shadow: none;
+    line-height: 3rem;
+    padding-top: 0.125rem;
+  }
+  .typer li.typer-num.is-Del {
+    color: #1581cf;
+    order: 99;
+  }
+  .typer li.typer-num.is-Del span {
+    display: block;
+    border-radius: none;
+    box-shadow: none;
+    line-height: 3rem;
+    padding-top: 0.125rem;
+  }
+  .cartBadgeNo {
+    display: flex;
+    background-color: hsla(0, 0%, 100%, 0.95);
+    height: 2.5rem;
+    width: 100%;
+    line-height: 2.5rem;
+    color: #454545;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+  }
+
+  .cartBadgeNo p {
+    display: inline-block;
+    text-align: left;
+  }
+  .cart-ipt-cancle {
+    color: #1581cf;
+    width: 4rem;
+    text-align: center;
+  }
+  .cart-ipt-placeholder {
+    color: #828282;
+  }
+  .cart-ipt-sure {
+    color: #1581cf;
+    width: 4rem;
+    text-align: center;
+  }
+  .cart-ipt-sure div {
+    width: 4rem;
+    text-align: center;
+  }
+  .sure {
+    float: right;
+    color: #fff;
+    background-color: darkgray;
+    padding: 0.5rem;
+  }
+
+  .close {
+    background-color: darkgray;
+    padding: 0.5rem;
+    color: #fff;
+  }
+  .bottom-fade-enter-active {
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+  }
+  .bottom-fade-leave-active {
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+  }
+  .bottom-fade-enter,
+  .bottom-fade-leave-to {
+    transform: translateY(-1000px);
+    -webkit-transform: translateY(-1000px);
+    opacity: 0;
+  }
+  .bottom-fade-enter-active,
+  .bottom-fade-leave-active {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+  }
+  .bottom-fade-enter,
+  .bottom-fade-leave-to {
+    transform: translateY(600px);
+    -webkit-transform: translateY(600px);
+    opacity: 0;
+  }
+}

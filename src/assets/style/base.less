@@ -1,0 +1,98 @@
+p {
+  margin: 0;
+}
+// 子页面上边距
+.sub_page_base {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-top: 45px;
+}
+.gray {
+  background: #efefef;
+  height: 10px;
+}
+#app {
+  .van-field__label {
+    text-align: justify;
+    text-align-last: justify;
+    color: #797979;
+    display: inline-block;
+    max-height: 24px;
+    &:after {
+      display: inline-block;
+      content: '';
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+    }
+  }
+  .van-cell__value {
+    align-self: center;
+    margin-left: -4px;
+  }
+  .van-cell:not(:last-child)::after {
+    left: 0;
+  }
+  .van-cell--required::before {
+    color: #ffba00;
+    left: 5px;
+    top: 12px;
+  }
+  // 日期控件
+  .van-picker__toolbar {
+    background: #15499a;
+    &::after {
+      border-color: #15499a;
+    }
+    .van-picker__cancel,
+    .van-picker__confirm {
+      color: #fff;
+      font-size: 15px;
+      &:active {
+        background: rgb(21, 73, 154, 0.5);
+      }
+    }
+  }
+}
+// 底部按钮
+.pub_fixed_btn {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 25px;
+  &.disabled {
+    /deep/ .van-button--primary {
+      background: #bfbfbf;
+      border: 1px solid #bfbfbf;
+    }
+  }
+}
+// 普通按钮尺寸
+.normal_btn {
+  width: 175px;
+  height: 45px;
+  /deep/ .van-button--large {
+    height: 100%;
+  }
+}
+// flex文字居中
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: normal;
+}
+.justify,
+.left-cell-title {
+  text-align: justify;
+  text-align-last: justify;
+  display: inline-block;
+  &:after {
+    display: inline-block;
+    content: '';
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+  }
+}

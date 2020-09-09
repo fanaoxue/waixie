@@ -1,0 +1,65 @@
+import Vue from 'vue';
+import {
+  NavBar,
+  Loading,
+  Toast,
+  Dialog,
+  Icon,
+  NoticeBar,
+  Tab,
+  Tabs,
+  Tabbar,
+  TabbarItem,
+  Field,
+  Button,
+  CellGroup,
+  Cell,
+  ImagePreview,
+  Popup,
+  Picker,
+  ActionSheet,
+  NumberKeyboard,
+  RadioGroup,
+  Radio,
+  Collapse,
+  CollapseItem,
+  PullRefresh,
+  List,
+  DatetimePicker,
+  CheckboxGroup,
+  Checkbox,
+  PasswordInput,
+  Search,
+} from 'vant';
+Vue.use(NavBar)
+  .use(Loading)
+  .use(Toast)
+  .use(Dialog)
+  .use(Icon)
+  .use(NoticeBar)
+  .use(Tab)
+  .use(Tabs)
+  .use(Tabbar)
+  .use(TabbarItem)
+  .use(Field)
+  .use(Button)
+  .use(Cell)
+  .use(CellGroup)
+  .use(ImagePreview)
+  .use(Popup)
+  .use(Picker)
+  .use(ActionSheet)
+  .use(NumberKeyboard)
+  .use(RadioGroup)
+  .use(Radio)
+  .use(Collapse)
+  .use(CollapseItem)
+  .use(PullRefresh)
+  .use(List)
+  .use(DatetimePicker)
+  .use(CheckboxGroup)
+  .use(Checkbox)
+  .use(PasswordInput)
+  .use(Search);
+
+Toast.setDefaultOptions('loading', { forbidClick: true, duration: 0 });
